@@ -1,0 +1,70 @@
+﻿{
+    "configurations": [
+        {
+            "name": "MSVC-x64-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "-std=c++20 /EHsc /MD",
+            "buildCommandArgs": "-std=c++20 /EHsc /MD",
+            "ctestCommandArgs": "",
+            "variables": []
+        },
+        {
+            "name": "Clang-x86-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "-std=c++20 /EHsc /MD",
+            "buildCommandArgs": "-std=c++20 /EHsc /MD",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "clang_cl_x86" ],
+            "variables": [
+                {
+                    "name": "CXX_VERSION",
+                    "value": "20",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "Clang-x86-Release",
+            "generator": "Ninja",
+            "configurationType": "RelWithDebInfo",
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "-std=c++20 /EHsc /MD",
+            "buildCommandArgs": "-std=c++20 /EHsc /MD",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "clang_cl_x86" ],
+            "variables": []
+        },
+        {
+            "name": "x86-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "-std=c++20 /EHsc /MD",
+            "buildCommandArgs": "-std=c++20 /EHsc /MD",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "msvc_x86" ],
+            "variables": []
+        },
+        {
+            "name": "x86-Release",
+            "generator": "Ninja",
+            "configurationType": "RelWithDebInfo",
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "-std=c++20 /EHsc /MD",
+            "buildCommandArgs": "-std=c++20 /EHsc /MD",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "msvc_x86" ],
+            "variables": []
+        }
+    ]
+}
