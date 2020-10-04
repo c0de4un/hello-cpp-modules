@@ -1,2 +1,2 @@
 # hello-cpp-modules
-Sample project ot demonstrate C++ 20 Modules approach.
+Sample project to demonstrate C++ 20 Modules approach.
